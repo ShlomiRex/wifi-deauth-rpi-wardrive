@@ -7,6 +7,8 @@ Just run 1 command and put raspberry pi zero w in your backpack and the raspberr
 
 When you get further away from WiFi AP, the script will adjust the best network target to de-authenticate.
 
+The script also saves information about Access Points you visited in your travels as CSV so you can later at home analyze all MAC's, ESSID's, and more.
+
 # How
 
 When raspberry pi zero w is booting, and ready, it executes the first script: `startup.sh`. Setup cronjob below.
@@ -16,6 +18,8 @@ This connects the raspberry pi to pre-determined network (for example, your phon
 You can SSH into raspberry pi without knowing the IP: you can type the `hostname` of it, example: `$ ssh pi@raspberrypi`. You can change the hostname with `$ sudo raspi-config` and choose `Network Options` and `Change hostname`.
 
 After SSH you just type: `$ sudo python3 attack.py` to run the attack. Enjoy!
+
+You need to create a folder called "dump" where the AP data can be stored.
 
 # Setup cronjob
 

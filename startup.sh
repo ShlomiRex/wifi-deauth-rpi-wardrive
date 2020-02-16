@@ -8,4 +8,4 @@
 
 #touch /home/pi/StartupFileCreationTest
 #sudo wpa_supplicant -B -i wlan0 -c /home/pi/wpa_supplicant_hotspot.conf
-sudo bash /home/pi/wifi-connect.sh /home/pi/wpa_supplicant_hotspot.conf
+sudo bash /home/pi/wifi-connect.sh wlan0 /home/pi/wpa_supplicant_home.conf

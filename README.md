@@ -21,6 +21,12 @@ After SSH you just type: `$ sudo python3 attack.py` to run the attack. Enjoy!
 
 You need to create a folder called "dump" where the AP data can be stored.
 
+# What you need
+
+* 1 raspberry pi
+* 1 wifi adapter capable of monitor mode, such as Alfa series
+* (Optional) External battery to power the pi
+
 # Setup cronjob
 
 Setup crontab with:

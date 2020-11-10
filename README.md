@@ -15,6 +15,8 @@ When raspberry pi zero w is booting, and ready, it executes the first script: `s
 
 This connects the raspberry pi to pre-determined network (for example, your phone hotspot). This allows to SSH into the raspberry pi from your phone. Just open hotspot, change the wpa_supplicant configuration file, and the raspberry pi will connect to it on each startup.
 
+The reason that you need to SSH to raspberry pi zero w instead of just running the attack right away, is that, you travel, you don't have keyboard, mouse, or display. You may want to give the attack diffirent parameters or other scripts. You can't know for sure if the attack succeeded or even if the raspberry pi works. So, SSH into it.
+
 You can SSH into raspberry pi without knowing the IP: you can type the `hostname` of it, example: `$ ssh pi@raspberrypi`. You can change the hostname with `$ sudo raspi-config` and choose `Network Options` and `Change hostname`.
 
 After SSH you just type: `$ sudo python3 attack.py` to run the attack. Enjoy!
